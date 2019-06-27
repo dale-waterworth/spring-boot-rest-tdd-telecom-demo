@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "e0c46e96-7b2c-467d-97cc-1786ee46f841",
+		"name": "TelecomDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all numbers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/phoneNumber",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"phoneNumber"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get customer numbers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/phoneNumber/customer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"phoneNumber",
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add a number",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"customerId\": 1,\n    \"countryCode\": \"+44\",\n    \"number\": \"0123456789\",\n    \"active\": false\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/phoneNumber",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"phoneNumber"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
