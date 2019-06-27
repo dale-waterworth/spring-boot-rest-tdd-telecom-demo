@@ -32,6 +32,6 @@ GET -> http://localhost:8080/api/phoneNumber/customer/1 - get customer numbers
 NOTE:  The orginal task was to update the number hence the 'http://localhost:8080/api/phoneNumber/1/activate' request. A post should be used to create a new one.
 
 
-###
+### Swagger
 View API view Swagger
 http://localhost:8080/swagger-ui.html
